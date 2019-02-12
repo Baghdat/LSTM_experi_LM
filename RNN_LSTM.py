@@ -69,9 +69,9 @@ def read_data(config):
     data = open(input_file, 'r').read().replace('\n', '<eos>').split()
     return [word_to_ix[w] for w in data]
 
-  train_raw_data = get_word_raw_data('data/word/train.txt')
-  valid_raw_data = get_word_raw_data('data/word/valid.txt')
-  test_raw_data = get_word_raw_data('data/word/test.txt')
+  train_raw_data = get_word_raw_data('data/train.txt')
+  valid_raw_data = get_word_raw_data('data/valid.txt')
+  test_raw_data = get_word_raw_data('data/test.txt')
 
   return train_raw_data, valid_raw_data, test_raw_data
 
