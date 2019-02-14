@@ -55,7 +55,7 @@ class Config(object):
 
 def read_data(config):
   '''read data sets, construct all needed structures and update the config'''
-  word_data = open('data/word/train.txt', 'r').read().replace('\n', '<eos>').split()
+  word_data = open('data/train.txt', 'r').read().replace('\n', '<eos>').split()
   words = list(set(word_data))
 
   word_data_size, word_vocab_size = len(word_data), len(words)
